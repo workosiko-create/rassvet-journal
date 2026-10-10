@@ -1,0 +1,163 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+.jr{--ink:#141b16;--forest:#1b261e;--forest2:#223026;--ivory:#f5f2ec;--paper:#fbfaf7;--copper:#b5703f;--copper2:#c98552;--text:#1d221e;--muted:#5d655f;--line:#e5e1d8;font-family:'Manrope',system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.jr *{box-sizing:border-box;margin:0;padding:0}
+.jr img{display:block;max-width:100%}
+.jr a{color:inherit;text-decoration:none}
+.jr .w{max-width:1240px;margin:0 auto;padding:0 24px}
+.jr h1,.jr h2,.jr h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:-.01em}
+.jr .hdr{background:var(--forest);color:#fff}
+.jr .hdr .w{display:flex;align-items:center;gap:28px;height:72px}
+.jr .logo{font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.12em;color:#e3a97a;line-height:1}
+.jr .logo small{display:block;font-family:'Manrope';font-size:9px;letter-spacing:.32em;color:#d7d2c8;margin-top:4px;text-transform:uppercase}
+.jr .nav{display:flex;gap:20px;margin-left:auto;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.jr .nav a{opacity:.85}.jr .nav a:hover{opacity:1;color:#e3a97a}
+.jr .hero{background:var(--forest);color:var(--ivory);padding:72px 0 56px}
+.jr .hero .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--copper2)}
+.jr .hero h1{font-size:clamp(34px,4.6vw,58px);max-width:900px;margin:14px 0 18px}
+.jr .hero p.lead{font-size:18px;max-width:760px;color:#cfd4cd}
+.jr .hero .meta{margin-top:22px;font-size:13px;color:#9aa39b;letter-spacing:.04em}
+.jr .wrap{display:grid;grid-template-columns:minmax(0,760px) 300px;gap:64px;padding:72px 0 96px;align-items:start}
+.jr .content h2{font-size:32px;margin:48px 0 18px;scroll-margin-top:96px}
+.jr .content h2:first-child{margin-top:0}
+.jr .content h3{font-size:24px;margin:30px 0 12px}
+.jr .content p{margin:14px 0}
+.jr .content ul,.jr .content ol{margin:14px 0 14px 22px}
+.jr .content li{margin:7px 0}
+.jr .content li::marker{color:var(--copper)}
+.jr .content a{color:var(--copper);border-bottom:1px solid rgba(181,112,63,.4)}
+.jr .content a:hover{border-bottom-color:var(--copper)}
+.jr .content strong{font-weight:700}
+.jr table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+.jr th{background:var(--forest);color:var(--ivory);text-align:left;padding:12px 14px;font-weight:600;font-size:13px;letter-spacing:.04em}
+.jr td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.jr tr:nth-child(even) td{background:#f6f3ec}
+.jr .note{border-left:3px solid var(--copper);background:#f6f3ec;padding:16px 20px;margin:22px 0;font-size:15px}
+.jr .cta{background:var(--forest);color:var(--ivory);border-radius:16px;padding:32px;margin:36px 0}
+.jr .cta h3{font-size:26px;margin-bottom:10px}
+.jr .cta p{color:#c8cfc7;font-size:15px;margin-bottom:18px}
+.jr .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;transition:.25s;cursor:pointer;border:0;font-family:inherit}
+.jr .btn-cu{background:var(--copper);color:#fff}
+.jr .btn-cu:hover{background:#9c5e33}
+.jr .btn-ol{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent;margin-left:10px}
+.jr .btn-ol:hover{background:#fff;color:var(--ink)}
+.jr .side{position:sticky;top:24px;background:#f6f3ec;border:1px solid var(--line);border-radius:14px;padding:24px;font-size:14px}
+.jr .side h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper);margin-bottom:14px;font-family:'Manrope'}
+.jr .side a{display:block;padding:8px 0;color:var(--muted);border-bottom:1px solid var(--line)}
+.jr .side a:hover{color:var(--text)}
+.jr .faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.jr .faq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;position:relative;padding-right:28px}
+.jr .faq summary::-webkit-details-marker{display:none}
+.jr .faq summary::after{content:'+';position:absolute;right:4px;top:-2px;font-size:22px;color:var(--copper);font-weight:400}
+.jr .faq details[open] summary::after{content:'–'}
+.jr .faq details p{margin-top:12px;color:#41483f;font-size:15px}
+.jr .foot{background:var(--ink);color:#b9c0b8;padding:48px 0 32px;margin-top:0}
+.jr .foot .w{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.jr .foot b{color:#f5f2ec;display:block;margin-bottom:10px;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500}
+.jr .foot a{color:#b9c0b8}.jr .foot a:hover{color:#e3a97a}
+.jr .foot .cols{display:flex;gap:56px;flex-wrap:wrap;font-size:14px}
+.jr .foot .cols div{min-width:150px}
+.jr .foot .cols a{display:block;padding:4px 0}
+.jr .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:32px;padding-top:20px;font-size:12px;color:#7d857e;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:960px){.jr .wrap{grid-template-columns:1fr}.jr .side{display:none}.jr .nav{display:none}}
+</style>
+<div class="jr">
+<header class="hdr"><div class="w">
+<a class="logo" href="/">Рассвет<small>парк-отель у воды</small></a>
+<nav class="nav"><a href="/#doma">Дома</a><a href="/bath">Баня</a><a href="/rest">Ресторан</a><a href="/#rybalka">Рыбалка</a><a href="/booking">Бронирование</a></nav>
+</div></header>
+
+<section class="hero"><div class="w">
+<div class="eyebrow">Журнал «Рассвет» · Зима у воды</div>
+<h1>Зимний отдых на Горьковском море: баня, зимняя рыбалка, Новый год у воды</h1>
+<p class="lead">Летом Горьковское водохранилище знают все, а вот зимой оно раскрывается с другой стороны: пустынный лёд, искрящийся сосновый бор, горячая баня на фоне мороза и судак со льда. Рассказываем, чем заняться на Горьковском море с ноября по март и как встретить Новый год у воды.</p>
+<div class="meta">Обновлено: октябрь 2026 · Время чтения: 8 минут</div>
+</div></section>
+
+<div class="w"><div class="wrap">
+<article class="content">
+
+<h2 id="why">Почему зимой на водохранилище стоит побывать</h2>
+<p>Зимнее Горьковское море — это тишина, которой нет летом. Лёд у берега становится дорогой, сосновый бор — белым собором, а закат над ледяной гладью длится дольше и светит розовым. Цены на дома падают на 30–40% по сравнению с июлем, а впечатлений от «моря посреди зимы» — уникальные: воронки ледяного шуги, застывшие волны у берега, следы зайца и лисы на песке.</p>
+<p>Главное — правильно одеться и выбрать базу с хорошей баней и камином: зимний отдых у воды строится вокруг контраста мороза и тепла.</p>
+
+<h2 id="winter-fun">Чем заняться зимой: 6 идей</h2>
+<ol>
+<li><strong>Горячая баня с купелью.</strong> Контраст «жаркая парилка — морозный воздух» — зимняя классика. Хорошие банные комплексы работают круглый год: парьтесь, бегайте в снег по тёплой дорожке и согревайтесь травяным чаем у окна.</li>
+<li><strong>Зимняя рыбалка.</strong> Горьковское море зимой славится судаком, щукой и окунем. Первый лёд — декабрь, самое стабильное время — январь и февраль. Новичку лучше ехать с егерем: он знает безопасные места, где лёд держит и где стоит хищник.</li>
+<li><strong>Прогулки по льду и снегоступы.</strong> Застывшее водохранилище — идеальная равнина для прогулок: до островов, которые летом видны только с лодки. Берите тёплые ботинки с нескользящей подошвой и термос.</li>
+<li><strong>Фотосессии.</strong> Зимний свет на воде мягкий и низкий — золотой час тут длится часа два. Белое пространство льда и тёмный сосновый бор — готовая студия.</li>
+<li><strong>Камин, чай и настольные игры.</strong> Вечер в доме с панорамным окном на замёрзшее море — самостоятельная программа: суп на плите, дровяной камин, карты и разговоры.</li>
+<li><strong>Новогодние праздники у воды.</strong> Встретить год на берегу водохранилища — тренд последних лет: салют надо льдом, катание с горки, баня в новогоднюю ночь и поздний завтрак 1 января.</li>
+</ol>
+
+<h2 id="ny">Новый год на Горьковском море: как это устроено</h2>
+<p>Новогодние заезды обычно длятся 3–4 ночи: 30 декабря — заезд, праздничный ужин и баня, 31 декабря — программа для детей днём, банкет вечером и салют в полночь на берегу, 1 января — поздний завтрак, прогулки, баня по сменам. Дома бронируют с сентября: хорошие варианты у воды на новогодние даты разбирают за 2–3 месяца.</p>
+<table>
+<tr><th>Формат новогоднего заезда</th><th>Компания</th><th>Бюджет</th></tr>
+<tr><td>Дом + баня, без праздничного банкета</td><td>до 8 чел.</td><td>от 120 000 ₽ / 4 ночи</td></tr>
+<tr><td>Дом + новогодний банкет в ресторане</td><td>до 16 чел.</td><td>от 200 000 ₽ / 4 ночи</td></tr>
+<tr><td>Корпоративный новогодний заезд</td><td>до 50 чел.</td><td>от 400 000 ₽ / 3 ночи</td></tr>
+</table>
+<div class="note">Уточняйте, что входит в цену: праздничный ужин 31 декабря, банный комплекс, дрова для камина и поздний выезд 2 января обычно считаются отдельно.</div>
+
+<h2 id="safety">Безопасность на льду: 5 правил</h2>
+<ul>
+<li>Выходите на лёд толщиной от 10 см; в начале сезона ходите только по проложенным и проверенным дорожкам.</li>
+<li>Не выходите один: минимум пара, в кармане — верёвка и подручные острые предметы (шило, нож).</li>
+<li>Избегайте мест с родниками, течением и шугою — там лёд тоньше.</li>
+<li>Следите за погодой: при оттепели выше −2 °C несколько дней подряд лёд резко слабеет.</li>
+<li>Детей на лёд — только с взрослыми и ближе к берегу.</li>
+</ul>
+
+<h2 id="pack">Что взять с собой зимой у воды</h2>
+<p>Базовый список: термобельё, флиска, ветрозащитная куртка, две пары обуви (одна — с нескользящей подошвой для льда), тёплые носки с запасом, крем от обморожений, термос, фонарик и пауэрбанк — на морозе телефоны садятся быстро. В доме у воды обычно есть всё для готовки, но продукты закупайте заранее: в посёлках зимой магазины работают по сокращённому графику.</p>
+
+<h2 id="rassvet">Зима в парк-отеле «Рассвет»</h2>
+<p>«Рассвет» работает круглый год: зимой здесь топят камины в панорамных домах, греют баню с бассейном и купелью, в ресторане подают горячие обеды и ужины, а егерь возит гостей на проверенные рыболовные точки. Пляж превращается в ледяную равнину с видом на горизонт водохранилища — до Нижнего Новгорода всё те же 90 минут.</p>
+<div class="cta">
+<h3>Забронировать зимние даты</h3>
+<p>Новогодние заезды разбирают быстро — оставьте заявку, и мы подберём дом под вашу компанию.</p>
+<a class="btn btn-cu" href="/booking">Оставить заявку</a><a class="btn btn-ol" href="/bath">Баня с бассейном</a>
+</div>
+
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq">
+<details><summary>Когда на Горьковском море встаёт лёд?</summary><p>Обычно в конце ноября — начале декабря, в тёплую зиму — ближе к середине декабря. Устойчивый лёд, на который выходят рыбаки, формируется к концу декабря; точную ситуацию смотрите в отчётах рыбаков и у егерей баз.</p></details>
+<details><summary>Можно ли встретить Новый год на берегу водохранилища?</summary><p>Да, это один из самых популярных форматов: дома у воды, новогодний банкет, баня в ночь праздника и салют надо льдом. Бронируйте за 2–3 месяца.</p></details>
+<details><summary>Что с рыбалкой зимой — кого ловят?</summary><p>Главные зимние трофеи Горьковского моря — судак и щука, меньше окунь и берш. Ловят на балансиры, блёсны и живца со льда; новичкам лучше ехать с егерем.</p></details>
+<details><summary>Не холодно ли зимой в домах у воды?</summary><p>В нормальных домах у воды — нет: автономное отопление, камин и горячая вода работают круглосуточно. Главное удовольствие зимы — как раз контраст: мороз снаружи, +24 и камин внутри.</p></details>
+<details><summary>Есть ли зимой инфраструктура: магазины, прокат?</summary><p>В посёлках у водохранилища зимой работают базовые магазины, но по сокращённому графику. Прокат сапов и лодок зимой закрыт, зато работают банные комплексы и рестораны при базах — продукты лучше привозить с собой.</p></details>
+</div>
+
+</article>
+<aside class="side">
+<h4>Содержание</h4>
+<a href="#why">Зачем ехать зимой</a>
+<a href="#winter-fun">6 идей зимы</a>
+<a href="#ny">Новый год у воды</a>
+<a href="#safety">Безопасность на льду</a>
+<a href="#pack">Что взять</a>
+<a href="#rassvet">Зима в «Рассвете»</a>
+<a href="#faq">Вопросы и ответы</a>
+</aside>
+</div></div>
+
+<footer class="foot"><div class="w">
+<div><b>Рассвет</b>Парк-отель на берегу<br>Горьковского водохранилища<br>Городецкий район, пос. Волжское лесничество</div>
+<div class="cols">
+<div><a href="/">Главная</a><a href="/#doma">Дома</a><a href="/bath">Баня</a><a href="/rest">Ресторан</a></div>
+<div><a href="/booking">Бронирование</a><a href="tel:+79601908090">+7 (960) 190-80-90</a><a href="tel:+79648371353">+7 (964) 837-13-53</a></div>
+</div>
+</div><div class="w"><div class="copy"><span>© 2026 Парк-отель «Рассвет»</span><span><a href="/privacy">Политика конфиденциальности</a> · <a href="/offer">Оферта</a></span></div></div></footer>
+</div>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Когда на Горьковском море встаёт лёд?","acceptedAnswer":{"@type":"Answer","text":"Обычно в конце ноября — начале декабря, в тёплую зиму — ближе к середине декабря. Устойчивый лёд, на который выходят рыбаки, формируется к концу декабря; точную ситуацию смотрите в отчётах рыбаков и у егерей баз."}},
+{"@type":"Question","name":"Можно ли встретить Новый год на берегу водохранилища?","acceptedAnswer":{"@type":"Answer","text":"Да, это один из самых популярных форматов: дома у воды, новогодний банкет, баня в ночь праздника и салют надо льдом. Бронируйте за 2–3 месяца."}},
+{"@type":"Question","name":"Что с рыбалкой зимой — кого ловят?","acceptedAnswer":{"@type":"Answer","text":"Главные зимние трофеи Горьковского моря — судак и щука, меньше окунь и берш. Ловят на балансиры, блёсны и живца со льда; новичкам лучше ехать с егерем."}},
+{"@type":"Question","name":"Не холодно ли зимой в домах у воды?","acceptedAnswer":{"@type":"Answer","text":"В нормальных домах у воды — нет: автономное отопление, камин и горячая вода работают круглосуточно. Главное удовольствие зимы — как раз контраст: мороз снаружи, +24 и камин внутри."}},
+{"@type":"Question","name":"Есть ли зимой инфраструктура: магазины, прокат?","acceptedAnswer":{"@type":"Answer","text":"В посёлках у водохранилища зимой работают базовые магазины, но по сокращённому графику. Прокат сапов и лодок зимой закрыт, зато работают банные комплексы и рестораны при базах — продукты лучше привозить с собой."}}
+]}
+</script>
